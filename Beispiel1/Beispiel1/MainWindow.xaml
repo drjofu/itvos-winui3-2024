@@ -6,27 +6,28 @@
     xmlns:local="using:Beispiel1"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    
     mc:Ignorable="d">
   <Grid>
     <Grid.ColumnDefinitions>
-      <ColumnDefinition/>
-      <ColumnDefinition/>
-      <ColumnDefinition/>
+      <ColumnDefinition Width="1*"/>
+      <ColumnDefinition Width="Auto"/>
+      <ColumnDefinition Width="4*"/>
     </Grid.ColumnDefinitions>
     <Grid.RowDefinitions>
-      <RowDefinition/>
+      <RowDefinition Height="30"/>
+      <RowDefinition Height="30"/>
       <RowDefinition/>
     </Grid.RowDefinitions>
     <Rectangle Fill="Pink" Grid.Row="0" Grid.Column="1"/>
     
     <Button Content="Hallo Welt" Click="DerErsteButtonClick"/>
     <Button Content="Hallo schöne neue Welt" Grid.Column="2"/>
-
-    <Button Click="MeinButtonClick" Grid.Row="1" Grid.ColumnSpan="3">
+    <Button Click="MeinButtonClickAsync" Grid.Row="2" Grid.ColumnSpan="3">
       <Button.RenderTransform>
         <TransformGroup>
           <RotateTransform Angle="30"/>
-          <TranslateTransform X="100" Y="100"/>
+          <TranslateTransform X="10" Y="10"/>
         </TransformGroup>
       </Button.RenderTransform>
       <StackPanel Orientation="Horizontal" >
@@ -46,6 +47,6 @@
 
       </StackPanel>
     </Button>
-    <TextBlock Text="wird ersetzt" Name="TB_Ausgabe" Margin="5"/>
+    <TextBlock Text="wird ersetzt" TextWrapping="Wrap" Name="TB_Ausgabe" Margin="5" Grid.Row="0" Grid.Column="1"/>
   </Grid>
 </Window>

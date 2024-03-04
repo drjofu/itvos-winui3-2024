@@ -10,6 +10,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
+using System.Threading.Tasks;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 
@@ -28,9 +29,23 @@ namespace Beispiel1
       this.InitializeComponent();
     }
 
-    private void MeinButtonClick(object sender, RoutedEventArgs e)
+    private async void MeinButtonClickAsync(object sender, RoutedEventArgs e)
     {
       TB_Ausgabe.Text = $"Jetzt ist es {DateTime.Now.ToLongTimeString()}";
+
+      ContentDialog dialog = new ContentDialog();
+
+      // XamlRoot must be set in the case of a ContentDialog running in a Desktop app
+      dialog.XamlRoot= TB_Ausgabe.XamlRoot;
+      dialog.Style = Application.Current.Resources["DefaultContentDialogStyle"] as Style;
+      dialog.Title = "Ohh - Der Button wurde gedrückt...";
+      dialog.Content= $"Jetzt ist es {DateTime.Now.ToLongTimeString()}";
+      dialog.PrimaryButtonText = "OK";
+      dialog.DefaultButton = ContentDialogButton.Primary;
+     
+
+      var result = await dialog.ShowAsync();
+
     }
 
     private void DerErsteButtonClick(object sender, RoutedEventArgs e)
