@@ -12,8 +12,12 @@
     <EnableMsixTooling>true</EnableMsixTooling>
   </PropertyGroup>
   <ItemGroup>
+    <None Remove="AllesBuntes.xaml" />
     <None Remove="Beispiel1.xaml" />
     <None Remove="Startseite.xaml" />
+    <None Remove="Views\Datenbindung1.xaml" />
+    <None Remove="Views\Datenbindung2.xaml" />
+    <None Remove="Views\RessourcenBeispiel.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -41,12 +45,32 @@
     <ProjectCapability Include="Msix" />
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Views\Datenbindung2.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\Datenbindung1.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="AllesBuntes.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
     <Page Update="Beispiel1.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Startseite.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\RessourcenBeispiel.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>
   </ItemGroup>

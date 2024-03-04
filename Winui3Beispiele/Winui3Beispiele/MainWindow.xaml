@@ -11,6 +11,10 @@
   <NavigationView ItemInvoked="NavigationView_ItemInvoked">
     <NavigationView.MenuItems>
       <NavigationViewItem Icon="GoToStart" Content="Startseite" Tag="Startseite"/>
+      <NavigationViewItem Icon="OutlineStar" Content="Beispiel 1" Tag="Beispiel1"/>
+      <NavigationViewItem Icon="ContactPresence" Content="Ressourcen" Tag="RessourcenBeispiel"/>
+      <NavigationViewItem Icon="Accept" Content="Datenbindung 1" Tag="Datenbindung1"/>
+      <NavigationViewItem Icon="AddFriend" Content="Datenbindung 2" Tag="Datenbindung2"/>
     </NavigationView.MenuItems>
     <Frame x:Name="contentFrame"/>
 

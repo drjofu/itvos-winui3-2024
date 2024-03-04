@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="Winui3Beispiele.Views.Beispiel1"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Winui3Beispiele"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+  <Grid>
+    <Grid.ColumnDefinitions>
+      <ColumnDefinition Width="1*"/>
+      <ColumnDefinition Width="Auto"/>
+      <ColumnDefinition Width="4*"/>
+    </Grid.ColumnDefinitions>
+    <Grid.RowDefinitions>
+      <RowDefinition Height="30"/>
+      <RowDefinition Height="30"/>
+      <RowDefinition/>
+    </Grid.RowDefinitions>
+    <Rectangle Fill="Pink" Grid.Row="0" Grid.Column="1"/>
+
+    <Button Content="Hallo Welt" Click="DerErsteButtonClick"/>
+    <Button Content="Hallo schöne neue Welt" Grid.Column="2"/>
+    <Button Click="MeinButtonClickAsync" Grid.Row="2" Grid.ColumnSpan="3">
+      <Button.RenderTransform>
+        <TransformGroup>
+          <RotateTransform Angle="30"/>
+          <TranslateTransform X="10" Y="10"/>
+        </TransformGroup>
+      </Button.RenderTransform>
+      <StackPanel Orientation="Horizontal" >
+        <Ellipse Width="50" Height="50" Fill="Red" Margin="5"/>
+        <TextBlock Text="Ein Button" FontSize="20" VerticalAlignment="Center"/>
+        <Ellipse Width="50" Height="50"  Margin="5">
+          <Ellipse.Fill>
+            <!--<SolidColorBrush Color="Aqua"/>-->
+            <!--<RadialGradientBrush >
+              <GradientStop Offset="0" Color="Blue"/>
+              <GradientStop Offset="1" Color="Green"/>
+              <GradientStop Offset="0.5" Color="Yellow"/>
+            </RadialGradientBrush>-->
+            <ImageBrush ImageSource="Assets/Koala.jpg"/>
+          </Ellipse.Fill>
+        </Ellipse>
+
+      </StackPanel>
+    </Button>
+    <TextBlock Text="wird ersetzt" TextWrapping="Wrap" Name="TB_Ausgabe" Margin="5" Grid.Row="0" Grid.Column="1"/>
+  </Grid>
+</Page>

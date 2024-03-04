@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Page
-    x:Class="Winui3Beispiele.Beispiel1"
+    x:Class="Winui3Beispiele.Views.Startseite"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Winui3Beispiele"
@@ -9,7 +9,7 @@
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
 
-    <Grid>
-
-    </Grid>
+  <StackPanel>
+    <TextBlock Text="Unsere Startseite" FontSize="30" Margin="50"/>
+  </StackPanel>
 </Page>

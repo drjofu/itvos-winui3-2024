@@ -16,14 +16,14 @@ using Windows.Foundation.Collections;
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
 
-namespace Winui3Beispiele
+namespace Winui3Beispiele.Views
 {
   /// <summary>
   /// An empty page that can be used on its own or navigated to within a Frame.
   /// </summary>
-  public sealed partial class Beispiel1 : Page
+  public sealed partial class Datenbindung1 : Page
   {
-    public Beispiel1()
+    public Datenbindung1()
     {
       this.InitializeComponent();
     }
