@@ -24,6 +24,7 @@
     <None Remove="Views\GridViewBeispiel.xaml" />
     <None Remove="Views\RessourcenBeispiel.xaml" />
     <None Remove="Views\RssBeispiel1.xaml" />
+    <None Remove="Views\StylesBeispiel.xaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -50,6 +51,11 @@
   -->
   <ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
     <ProjectCapability Include="Msix" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\StylesBeispiel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Views\Datenbindung4.xaml">

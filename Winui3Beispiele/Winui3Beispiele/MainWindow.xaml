@@ -21,6 +21,7 @@
       <NavigationViewItem Icon="Favorite" Content="FlipView" Tag="FlipViewBeispiel"/>
       <NavigationViewItem Icon="GlobalNavigationButton" Content="GridView" Tag="GridViewBeispiel"/>
       <NavigationViewItem Icon="Globe" Content="Rss Beispiel 1" Tag="RssBeispiel1"/>
+      <NavigationViewItem Icon="Audio" Content="Styles" Tag="StylesBeispiel"/>
     </NavigationView.MenuItems>
     <Frame x:Name="contentFrame"/>
 
