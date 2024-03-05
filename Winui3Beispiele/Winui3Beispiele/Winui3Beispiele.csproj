@@ -10,6 +10,7 @@
     <PublishProfile>win10-$(Platform).pubxml</PublishProfile>
     <UseWinUI>true</UseWinUI>
     <EnableMsixTooling>true</EnableMsixTooling>
+    <DefaultLanguage>de-DE</DefaultLanguage>
   </PropertyGroup>
   <ItemGroup>
     <None Remove="AllesBuntes.xaml" />
@@ -17,6 +18,9 @@
     <None Remove="Startseite.xaml" />
     <None Remove="Views\Datenbindung1.xaml" />
     <None Remove="Views\Datenbindung2.xaml" />
+    <None Remove="Views\Datenbindung3.xaml" />
+    <None Remove="Views\FlipViewBeispiel.xaml" />
+    <None Remove="Views\GridViewBeispiel.xaml" />
     <None Remove="Views\RessourcenBeispiel.xaml" />
   </ItemGroup>
 
@@ -45,6 +49,20 @@
     <ProjectCapability Include="Msix" />
   </ItemGroup>
   <ItemGroup>
+    <Page Update="Views\GridViewBeispiel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\FlipViewBeispiel.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\Datenbindung3.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Views\Datenbindung2.xaml">
       <Generator>MSBuild:Compile</Generator>
     </Page>

@@ -15,6 +15,9 @@
       <NavigationViewItem Icon="ContactPresence" Content="Ressourcen" Tag="RessourcenBeispiel"/>
       <NavigationViewItem Icon="Accept" Content="Datenbindung 1" Tag="Datenbindung1"/>
       <NavigationViewItem Icon="AddFriend" Content="Datenbindung 2" Tag="Datenbindung2"/>
+      <NavigationViewItem Icon="Bold" Content="Datenbindung 3" Tag="Datenbindung3"/>
+      <NavigationViewItem Icon="Favorite" Content="FlipView" Tag="FlipViewBeispiel"/>
+      <NavigationViewItem Icon="GlobalNavigationButton" Content="GridView" Tag="GridViewBeispiel"/>
     </NavigationView.MenuItems>
     <Frame x:Name="contentFrame"/>
 

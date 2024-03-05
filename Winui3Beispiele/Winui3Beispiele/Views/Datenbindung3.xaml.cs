@@ -21,32 +21,16 @@ namespace Winui3Beispiele.Views
   /// <summary>
   /// An empty page that can be used on its own or navigated to within a Frame.
   /// </summary>
-  public sealed partial class Datenbindung2 : Page
+  public sealed partial class Datenbindung3 : Page
   {
-    public Datenbindung2()
+    public Laden DerLaden { get; set; }
+
+    public Datenbindung3()
     {
       this.InitializeComponent();
-      this.DataContext = new Laden();
+      DerLaden = new Laden();
     }
 
-    private void PreiseErhöhen(object sender, RoutedEventArgs e)
-    {
-      var liste = ((Laden)DataContext).Artikel;
-      foreach (var item in liste)
-      {
-        item.Preis *= 1.1;
-      }
-    }
 
-    private void ArtikelHinzufügen(object sender, RoutedEventArgs e)
-    {
-      var liste = ((Laden)DataContext).Artikel;
-      liste.Add(new Artikel()
-      {
-        Artikelnummer = 1000,
-        Bezeichnung = "was ganz neues",
-        Preis = 111
-      });
-    }
   }
 }

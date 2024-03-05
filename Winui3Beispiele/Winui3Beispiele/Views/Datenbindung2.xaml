@@ -7,9 +7,30 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    xmlns:main="using:Winui3Beispiele"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}"
+  >
+  <!--<Page.DataContext>
+    <main:Laden/>
+  </Page.DataContext>-->
+  <Page.Resources>
+    <DataTemplate x:Key="ArtikelTemplate" x:DataType="main:Artikel">
+      <StackPanel Orientation="Horizontal">
+        <TextBlock Text="{Binding Path=Artikelnummer}" Width="50"/>
+        <TextBlock Text="{Binding Path=Bezeichnung}" Width="100"/>
+        <TextBlock Text="{Binding Path=Preis}" Width="100" TextAlignment="Right"/>
+      </StackPanel>
 
+    </DataTemplate>
+
+  </Page.Resources>
   <StackPanel>
     <TextBlock Margin="5" Text="{Binding Path=Artikel[0].Artikelnummer}"/>
+    <ListBox Name="LB" ItemsSource="{Binding Path=Artikel}" ItemTemplate="{StaticResource ArtikelTemplate}" Margin="5" />
+    <ContentControl Content="{Binding ElementName=LB, Path=SelectedItem}" 
+                    ContentTemplate="{StaticResource ArtikelTemplate}" 
+                    Margin="5" />
+    <Button Content="Preise erhöhen" Click="PreiseErhöhen" Margin="5"/>
+    <Button Content="Artikel hinzufügen" Click="ArtikelHinzufügen" Margin="5"/>
   </StackPanel>
 </Page>

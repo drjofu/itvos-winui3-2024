@@ -34,7 +34,7 @@ namespace Winui3Beispiele
       string typname = args.InvokedItemContainer.Tag as string;
       typname = $"{nameof(Winui3Beispiele)}.Views.{typname}";
       var type = Assembly.GetExecutingAssembly().GetType(typname);
-      contentFrame.Navigate(type);
+      contentFrame.Navigate(type); 
     }
   }
 }
