@@ -20,7 +20,7 @@
         <TextBlock Text="{x:Bind Artikelnummer}" Width="50"/>
         <TextBlock Text="{x:Bind Bezeichnung}" Width="100"/>
         <TextBlock Text="{x:Bind sys:String.Format('{0:0.00}', Preis)}" Width="100" TextAlignment="Right"/>
-        <TextBox Text="{x:Bind Preis, Mode=TwoWay}"/>
+        <!--<TextBox Text="{x:Bind Preis, Mode=TwoWay}"/>-->
       </StackPanel>
     </DataTemplate>
   </Page.Resources>

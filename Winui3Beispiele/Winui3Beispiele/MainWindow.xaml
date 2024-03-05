@@ -18,6 +18,7 @@
       <NavigationViewItem Icon="Bold" Content="Datenbindung 3" Tag="Datenbindung3"/>
       <NavigationViewItem Icon="Favorite" Content="FlipView" Tag="FlipViewBeispiel"/>
       <NavigationViewItem Icon="GlobalNavigationButton" Content="GridView" Tag="GridViewBeispiel"/>
+      <NavigationViewItem Icon="Globe" Content="Rss Beispiel 1" Tag="RssBeispiel1"/>
     </NavigationView.MenuItems>
     <Frame x:Name="contentFrame"/>
 
