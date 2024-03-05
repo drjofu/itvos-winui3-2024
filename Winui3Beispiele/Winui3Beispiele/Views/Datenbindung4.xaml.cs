@@ -12,8 +12,6 @@ using Microsoft.UI.Xaml.Data;
 using Microsoft.UI.Xaml.Input;
 using Microsoft.UI.Xaml.Media;
 using Microsoft.UI.Xaml.Navigation;
-using System.ServiceModel.Syndication;
-using System.Xml;
 
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
@@ -23,15 +21,13 @@ namespace Winui3Beispiele.Views
   /// <summary>
   /// An empty page that can be used on its own or navigated to within a Frame.
   /// </summary>
-  public sealed partial class RssBeispiel1 : Page
+  public sealed partial class Datenbindung4 : Page
   {
-    //public SyndicationFeed Feed { get; set; } = new RssFeed().Feed;
-    public SyndicationFeed Feed { get; set; } = RssFeedStatic.GetFeed();
+    public Laden DerLaden { get; set; } = new();
 
-    public RssBeispiel1()
+    public Datenbindung4()
     {
       this.InitializeComponent();
-
     }
   }
 }

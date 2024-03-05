@@ -16,6 +16,8 @@
       <NavigationViewItem Icon="Accept" Content="Datenbindung 1" Tag="Datenbindung1"/>
       <NavigationViewItem Icon="AddFriend" Content="Datenbindung 2" Tag="Datenbindung2"/>
       <NavigationViewItem Icon="Bold" Content="Datenbindung 3" Tag="Datenbindung3"/>
+      <NavigationViewItem Icon="Italic" Content="Datenbindung 4" Tag="Datenbindung4"/>
+
       <NavigationViewItem Icon="Favorite" Content="FlipView" Tag="FlipViewBeispiel"/>
       <NavigationViewItem Icon="GlobalNavigationButton" Content="GridView" Tag="GridViewBeispiel"/>
       <NavigationViewItem Icon="Globe" Content="Rss Beispiel 1" Tag="RssBeispiel1"/>
