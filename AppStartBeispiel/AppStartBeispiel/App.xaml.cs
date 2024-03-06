@@ -19,7 +19,7 @@ using Windows.Foundation.Collections;
 // To learn more about WinUI, the WinUI project structure,
 // and more about our project templates, see: http://aka.ms/winui-project-info.
 
-namespace MVVMMini
+namespace AppStartBeispiel
 {
   /// <summary>
   /// Provides application-specific behavior to supplement the default Application class.
@@ -42,7 +42,6 @@ namespace MVVMMini
     protected override void OnLaunched(Microsoft.UI.Xaml.LaunchActivatedEventArgs args)
     {
       m_window = new MainWindow();
-      m_window.AppWindow.Resize(new Windows.Graphics.SizeInt32(700, 300));
       m_window.Activate();
     }
 

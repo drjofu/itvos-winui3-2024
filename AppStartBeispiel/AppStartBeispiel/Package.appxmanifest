@@ -8,14 +8,14 @@
   IgnorableNamespaces="uap rescap">
 
   <Identity
-    Name="4758c447-7116-40a7-850b-2469a70dbe60"
+    Name="a3899117-6df5-4b57-825d-a72b1c64202c"
     Publisher="CN=Joachim"
-    Version="1.0.1.0" />
+    Version="1.0.0.0" />
 
-  <mp:PhoneIdentity PhoneProductId="4758c447-7116-40a7-850b-2469a70dbe60" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
+  <mp:PhoneIdentity PhoneProductId="a3899117-6df5-4b57-825d-a72b1c64202c" PhonePublisherId="00000000-0000-0000-0000-000000000000"/>
 
   <Properties>
-    <DisplayName>MVVMMini</DisplayName>
+    <DisplayName>AppStartBeispiel</DisplayName>
     <PublisherDisplayName>Joachim</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -34,14 +34,21 @@
       Executable="$targetnametoken$.exe"
       EntryPoint="$targetentrypoint$">
       <uap:VisualElements
-        DisplayName="MVVMMini"
-        Description="MVVMMini"
+        DisplayName="AppStartBeispiel"
+        Description="AppStartBeispiel"
         BackgroundColor="transparent"
         Square150x150Logo="Assets\Square150x150Logo.png"
         Square44x44Logo="Assets\Square44x44Logo.png">
         <uap:DefaultTile Wide310x150Logo="Assets\Wide310x150Logo.png" />
         <uap:SplashScreen Image="Assets\SplashScreen.png" />
       </uap:VisualElements>
+      <Extensions>
+        <uap:Extension Category="windows.protocol">
+          <uap:Protocol Name="beispiel">
+            <uap:DisplayName>Beispiel</uap:DisplayName>
+          </uap:Protocol>
+        </uap:Extension>
+      </Extensions>
     </Application>
   </Applications>
 

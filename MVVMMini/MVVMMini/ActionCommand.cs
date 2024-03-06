@@ -5,6 +5,9 @@ namespace MVVMMini
 {
   public class ActionCommand : ICommand
   {
+    public string DisplayText { get; set; }
+    public string ToolTipText { get; set; }
+
     private readonly Action action;
 
     public ActionCommand(Action action)
