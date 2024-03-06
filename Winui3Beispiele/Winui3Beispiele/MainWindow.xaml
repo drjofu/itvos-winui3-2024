@@ -22,6 +22,7 @@
       <NavigationViewItem Icon="GlobalNavigationButton" Content="GridView" Tag="GridViewBeispiel"/>
       <NavigationViewItem Icon="Globe" Content="Rss Beispiel 1" Tag="RssBeispiel1"/>
       <NavigationViewItem Icon="Audio" Content="Styles" Tag="StylesBeispiel"/>
+      <NavigationViewItem Icon="Audio" Content="Eigene Controls" Tag="EigeneControls"/>
     </NavigationView.MenuItems>
     <Frame x:Name="contentFrame"/>
 

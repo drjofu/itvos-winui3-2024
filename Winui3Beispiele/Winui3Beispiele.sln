@@ -3,18 +3,25 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.34607.79
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Winui3Beispiele", "Winui3Beispiele\Winui3Beispiele.csproj", "{A22F0A60-9350-42E8-9247-E794B9A9418E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Winui3Beispiele", "Winui3Beispiele\Winui3Beispiele.csproj", "{A22F0A60-9350-42E8-9247-E794B9A9418E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Verkehr", "Verkehr\Verkehr.csproj", "{720D3026-95EC-48FF-8296-5AB2BA696B17}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
 		Debug|ARM64 = Debug|ARM64
 		Debug|x64 = Debug|x64
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
 		Release|ARM64 = Release|ARM64
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A22F0A60-9350-42E8-9247-E794B9A9418E}.Debug|Any CPU.ActiveCfg = Debug|x64
+		{A22F0A60-9350-42E8-9247-E794B9A9418E}.Debug|Any CPU.Build.0 = Debug|x64
+		{A22F0A60-9350-42E8-9247-E794B9A9418E}.Debug|Any CPU.Deploy.0 = Debug|x64
 		{A22F0A60-9350-42E8-9247-E794B9A9418E}.Debug|ARM64.ActiveCfg = Debug|ARM64
 		{A22F0A60-9350-42E8-9247-E794B9A9418E}.Debug|ARM64.Build.0 = Debug|ARM64
 		{A22F0A60-9350-42E8-9247-E794B9A9418E}.Debug|ARM64.Deploy.0 = Debug|ARM64
@@ -24,6 +31,9 @@ Global
 		{A22F0A60-9350-42E8-9247-E794B9A9418E}.Debug|x86.ActiveCfg = Debug|x86
 		{A22F0A60-9350-42E8-9247-E794B9A9418E}.Debug|x86.Build.0 = Debug|x86
 		{A22F0A60-9350-42E8-9247-E794B9A9418E}.Debug|x86.Deploy.0 = Debug|x86
+		{A22F0A60-9350-42E8-9247-E794B9A9418E}.Release|Any CPU.ActiveCfg = Release|x64
+		{A22F0A60-9350-42E8-9247-E794B9A9418E}.Release|Any CPU.Build.0 = Release|x64
+		{A22F0A60-9350-42E8-9247-E794B9A9418E}.Release|Any CPU.Deploy.0 = Release|x64
 		{A22F0A60-9350-42E8-9247-E794B9A9418E}.Release|ARM64.ActiveCfg = Release|ARM64
 		{A22F0A60-9350-42E8-9247-E794B9A9418E}.Release|ARM64.Build.0 = Release|ARM64
 		{A22F0A60-9350-42E8-9247-E794B9A9418E}.Release|ARM64.Deploy.0 = Release|ARM64
@@ -33,6 +43,22 @@ Global
 		{A22F0A60-9350-42E8-9247-E794B9A9418E}.Release|x86.ActiveCfg = Release|x86
 		{A22F0A60-9350-42E8-9247-E794B9A9418E}.Release|x86.Build.0 = Release|x86
 		{A22F0A60-9350-42E8-9247-E794B9A9418E}.Release|x86.Deploy.0 = Release|x86
+		{720D3026-95EC-48FF-8296-5AB2BA696B17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{720D3026-95EC-48FF-8296-5AB2BA696B17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{720D3026-95EC-48FF-8296-5AB2BA696B17}.Debug|ARM64.ActiveCfg = Debug|Any CPU
+		{720D3026-95EC-48FF-8296-5AB2BA696B17}.Debug|ARM64.Build.0 = Debug|Any CPU
+		{720D3026-95EC-48FF-8296-5AB2BA696B17}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{720D3026-95EC-48FF-8296-5AB2BA696B17}.Debug|x64.Build.0 = Debug|Any CPU
+		{720D3026-95EC-48FF-8296-5AB2BA696B17}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{720D3026-95EC-48FF-8296-5AB2BA696B17}.Debug|x86.Build.0 = Debug|Any CPU
+		{720D3026-95EC-48FF-8296-5AB2BA696B17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{720D3026-95EC-48FF-8296-5AB2BA696B17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{720D3026-95EC-48FF-8296-5AB2BA696B17}.Release|ARM64.ActiveCfg = Release|Any CPU
+		{720D3026-95EC-48FF-8296-5AB2BA696B17}.Release|ARM64.Build.0 = Release|Any CPU
+		{720D3026-95EC-48FF-8296-5AB2BA696B17}.Release|x64.ActiveCfg = Release|Any CPU
+		{720D3026-95EC-48FF-8296-5AB2BA696B17}.Release|x64.Build.0 = Release|Any CPU
+		{720D3026-95EC-48FF-8296-5AB2BA696B17}.Release|x86.ActiveCfg = Release|Any CPU
+		{720D3026-95EC-48FF-8296-5AB2BA696B17}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

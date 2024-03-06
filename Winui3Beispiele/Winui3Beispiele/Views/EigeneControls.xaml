@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Page
+    x:Class="Winui3Beispiele.Views.EigeneControls"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Winui3Beispiele.Views"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    xmlns:verkehr="using:Verkehr"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+  <StackPanel Orientation="Horizontal">
+    <verkehr:Ampel Background="DarkSlateGray" Height="120" IstGruen="{x:Bind CB.IsChecked, Mode=OneWay}"/>
+    <CheckBox Name="CB" Margin="5"/>
+    <verkehr:Ampel Background="DarkSlateGray" Height="120" IstGruen="{x:Bind CB.IsChecked, Mode=OneWay}">
+      <verkehr:Ampel.Template>
+        <ControlTemplate TargetType="verkehr:Ampel">
+          <Border
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}">
+            <StackPanel>
+              <Rectangle Width="50" Height="50" Fill="Red" Margin="5" Name="PART_LampeRot"/>
+              <Rectangle Width="50" Height="50" Fill="LightGreen" Margin="5" Name="PART_LampeGruen"/>
+            </StackPanel>
+          </Border>
+
+        </ControlTemplate>
+      </verkehr:Ampel.Template>
+    </verkehr:Ampel>
+
+  </StackPanel>
+</Page>

@@ -1,0 +1,24 @@
+<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Verkehr">
+
+  <Style TargetType="local:Ampel" >
+    <Setter Property="Template">
+      <Setter.Value>
+        <ControlTemplate TargetType="local:Ampel">
+          <Border
+                        Background="{TemplateBinding Background}"
+                        BorderBrush="{TemplateBinding BorderBrush}"
+                        BorderThickness="{TemplateBinding BorderThickness}">
+            <StackPanel>
+              <Ellipse Width="50" Height="50" Fill="Red" Margin="5" Name="PART_LampeRot"/>
+              <Ellipse Width="50" Height="50" Fill="LightGreen" Margin="5" Name="PART_LampeGruen"/>
+            </StackPanel>
+          </Border>
+
+        </ControlTemplate>
+      </Setter.Value>
+    </Setter>
+  </Style>
+</ResourceDictionary>

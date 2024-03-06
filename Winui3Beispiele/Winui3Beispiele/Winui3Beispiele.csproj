@@ -20,6 +20,7 @@
     <None Remove="Views\Datenbindung2.xaml" />
     <None Remove="Views\Datenbindung3.xaml" />
     <None Remove="Views\Datenbindung4.xaml" />
+    <None Remove="Views\EigeneControls.xaml" />
     <None Remove="Views\FlipViewBeispiel.xaml" />
     <None Remove="Views\GridViewBeispiel.xaml" />
     <None Remove="Views\RessourcenBeispiel.xaml" />
@@ -51,6 +52,14 @@
   -->
   <ItemGroup Condition="'$(DisableMsixProjectCapabilityAddedByProject)'!='true' and '$(EnableMsixTooling)'=='true'">
     <ProjectCapability Include="Msix" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Verkehr\Verkehr.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <Page Update="Views\EigeneControls.xaml">
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Views\StylesBeispiel.xaml">
